@@ -1,6 +1,14 @@
 import { Nota } from "./NotaInterface"
 
-export interface User {
-    username: string
-    notas: Nota[]
+export interface Usuario {
+    IdUsuario: number,
+    Correo: string,
+    Contraseña: string,
+    Nota: {
+        IdNota: number,
+        Titulo: string,
+        Descripcion: string,
+        Estado: boolean,
+        Fecha: string
+    }
 }

@@ -42,7 +42,6 @@ export const useNotas = () => {
         }
     }
 
-    
     //Variables
     const [incrementId, setIncrementId] = useState<number>(1)
     const [nota, setNota] = useState<Nota>({
@@ -66,7 +65,7 @@ export const useNotas = () => {
     const handleSend = () => {
         if (editbutton) {
             handleIncrement()
-            setNotas(prevNotas => [
+            setNotas((prevNotas) => [
                 ...prevNotas,
                 {
                     IdNota: incrementId,
@@ -156,7 +155,9 @@ export const useNotas = () => {
     hIdNotaeDatePicker,
     editbutton,
     notas,
-    handleUpdate
+    handleUpdate,
+    handleIncrement,
+    incrementId
 
   }
   )
