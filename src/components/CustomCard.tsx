@@ -26,13 +26,13 @@ export const CustomCard = ({itemIdNota, itemTitulo, itemDescripcion, itemFecha, 
             <Text style={{ fontSize: 20, textAlign: 'left', fontWeight: 'bold' }}>{itemFecha}</Text>
             <Text style={{ fontSize: 20, textAlign: 'center' }}>{itemEstado}</Text>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', width: '100%' }}>
-                <View style={{ width: '20%' }}>
+                <View style={{ width: '22%' }}>
                     <Button title='Delete' onPress={() => handleDelete(itemIdNota)}></Button>
                 </View>
-                <View style={{ width: '20%' }}>
+                <View style={{ width: '22%' }}>
                     <Button title='Update' onPress={() => handleUpdate(itemIdNota)}></Button>
                 </View>
-                <View style={{ width: '20%' }}>
+                <View style={{ width: '22%' }}>
                     <Button title={itemEstado ? '✓' : 'x'} onPress={() => handleCheck(itemIdNota, itemEstado)}></Button>
                 </View>
             </View>

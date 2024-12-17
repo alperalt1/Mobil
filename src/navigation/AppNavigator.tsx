@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { RootStackParamList } from '../types/NavigationTypes'; // Importar los tipos de navegación
 import { LoginScreen } from '../screens/LoginScreen';
 import { RegisterScreen } from '../screens/RegisterScreen';
+import { HomeScreen } from '../screens/HomeScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -15,6 +16,9 @@ const AppNavigator = () => {
             headerShown: false, 
           }} />
         <Stack.Screen name="Register" component={RegisterScreen} options={{
+            headerShown: false,  
+          }}/>
+        <Stack.Screen name="Home" component={HomeScreen} options={{
             headerShown: false,  
           }}/>
       </Stack.Navigator>
